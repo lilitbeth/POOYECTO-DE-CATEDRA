@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AC43BE6B-5A0B-4C33-BBE3-6DAFA9D2ECB6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>POOYECTO_DE_CATEDRA</RootNamespace>
+    <AssemblyName>POOYECTO DE CATEDRA</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acerca_de.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acerca_de.Designer.cs">
+      <DependentUpon>Acerca_de.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Conexión.cs" />
+    <Compile Include="Confirmar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Confirmar_Pedido.Designer.cs">
+      <DependentUpon>Confirmar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empleados.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gerente_Dueño.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Gerente_Dueño.Designer.cs">
+      <DependentUpon>Gerente_Dueño.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedidos.cs" />
+    <Compile Include="Pedidos_Realizados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedidos_Realizados.Designer.cs">
+      <DependentUpon>Pedidos_Realizados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MdiProperties.cs" />
+    <Compile Include="Realizar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Realizar_Inventario.Designer.cs">
+      <DependentUpon>Realizar_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Realizar_Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Realizar_Pedido.Designer.cs">
+      <DependentUpon>Realizar_Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Persona.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registro_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Empleados.Designer.cs">
+      <DependentUpon>Registro_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Revisar_Inventario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Revisar_Inventario.Designer.cs">
+      <DependentUpon>Revisar_Inventario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventana_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventana_Empleados.Designer.cs">
+      <DependentUpon>Ventana_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ventas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ventas.Designer.cs">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Acerca_de.resx">
+      <DependentUpon>Acerca_de.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Confirmar_Pedido.resx">
+      <DependentUpon>Confirmar_Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Gerente_Dueño.resx">
+      <DependentUpon>Gerente_Dueño.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedidos_Realizados.resx">
+      <DependentUpon>Pedidos_Realizados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Realizar_Inventario.resx">
+      <DependentUpon>Realizar_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <Resource Include="Realizar_Pedido.resx">
+      <DependentUpon>Realizar_Pedido.cs</DependentUpon>
+    </Resource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Registro_Empleados.resx">
+      <DependentUpon>Registro_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Revisar_Inventario.resx">
+      <DependentUpon>Revisar_Inventario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventana_Empleados.resx">
+      <DependentUpon>Ventana_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ventas.resx">
+      <DependentUpon>Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu-hamburguesa %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nota-medica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion-del-circulo-de-archivos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\informacion-del-circulo-de-archivos %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuarios-alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt-de-inicio-de-sesion %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diario-alternativo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carro-de-compras-rapido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Imagen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verificacion-resumida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tarjeta-de-credito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\regreso-a-casa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\proveedor-alternativo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alt-de-inventario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\venta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\usuario-de-archivo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papelera-xmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\habilidad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documento-aseptado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasFQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pupusasQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasRV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasPO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasCH.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusaA.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasRV1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2024-10-20 220130.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PupusasFQ1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de pantalla 2024-10-20 220845.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
